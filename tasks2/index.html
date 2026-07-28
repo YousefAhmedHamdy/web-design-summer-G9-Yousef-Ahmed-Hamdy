@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-design</title>
+</head>
+<body>
+
+    <form action="" method="post" >
+        <fieldset>
+            <legend>search</legend>
+            <div>
+                <label for="first_name">first_name:</label>
+                <input type="text" id="first_name" name="first_name" pattern="[A-Za-z-ي-ا]+" title="letters only" required >
+            </div>
+            <br>
+            <div>
+                <label for="last_name">last_name:</label>
+                  <input type="text" id="last_name" name="last_name" minlength="5">
+
+            </div>
+            <br>
+            <div>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="^(010|011|012|015)[0-9]{8}$" maxlength="11" placeholder="01012345678" title="11 digits starting with 010, 011, 012, or 015">
+            </div>
+            <br>
+
+            <div>
+                <label for="course"> courses:</label>
+                <input list="courses_list" ="text" id="course" name="course">
+                <datalist id="courses_list">
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="javascript"></option>
+                    <option value="c++"></option>
+                    </datalist>  
+            </div>
+            <br>
+
+            <div>
+                <label for="comment">comment:</label>
+                <textarea name="comment" id="comment" required>
+                </textarea>
+
+            </div>
+            <br>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <br>
+
+            <div>
+                <label>Tracks:</label><br>
+                <input type="checkbox" id="frontend" name="tracks" value="frontend" checked>
+                <label for="frontend">Frontend</label><br>
+                <input type="checkbox" id="backend" name="tracks" value="backend">
+                <label for="backend">Backend</label><br>
+                <input type="checkbox" id="mobile_dev" name="tracks" value="mobile_dev">
+                <label for="mobile_dev">mobile App</label>
+            </div>
+            <br>
+            <div>
+                <label for="level">Range:</label>
+                <input type="range" id="level" name="level" min="10" max="100" value="10">
+            </div>
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+
+
+        
+            
+    
+</body>
+</html>
