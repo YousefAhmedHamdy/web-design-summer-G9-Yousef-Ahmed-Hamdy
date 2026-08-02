@@ -1,0 +1,738 @@
+:root {
+    --primary-color: #6c5ce7;
+    --primary-dark: #5849be;
+    --accent-color: #a29bfe;
+    --dark-bg: #1e1e2d;
+    --text-dark: #2d3436;
+    --text-gray: #636e72;
+    --text-muted: #a1a1b5;
+    --bg-light: #f8f9fa;
+    --card-bg: #ffffff;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   1. Navbar & Header Styles
+   ========================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--white);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+.btn-primary {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    top: -2px;
+    background-color: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+/* =========================================
+   2. Hero Section
+   ========================================= */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 60px 8% 80px;
+    min-height: 500px;
+}
+
+.hero-bg-shape {
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(162, 155, 254, 0.15);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hero-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 6px;
+    max-width: 420px;
+    z-index: 2;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn-search {
+    position: relative;
+    right: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-search:hover {
+    background-color: var(--primary-dark);
+}
+
+.hero-image-container {
+    flex: 1.2;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hero-contact-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* =========================================
+   3. Stats Section
+   ========================================= */
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 50px;
+    position: relative;
+}
+
+.stats-info {
+    flex: 1;
+}
+
+.stats-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.stats-info p {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1 1 calc(50% - 20px);
+    background-color: var(--bg-light);
+    padding: 35px 25px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+/* =========================================
+   4. Apartments Section (6 Cards Grid)
+   ========================================= */
+.apartments-section {
+    position: relative;
+    padding: 80px 8%;
+    background-color: var(--bg-light);
+    overflow: hidden;
+}
+
+.apt-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(108, 92, 231, 0.05), transparent 60%);
+    z-index: 1;
+}
+
+.apt-header {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.apt-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.apt-cards-flex {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.apt-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.apt-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.12);
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.apt-card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(108, 92, 231, 0.9);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f2f6;
+    padding-top: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.specs {
+    display: flex;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-gray);
+}
+
+.specs span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.apt-bottom-bar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn-view-all {
+    position: relative;
+    top: 0;
+    background-color: var(--white);
+    color: var(--text-dark);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.btn-view-all:hover {
+    top: -2px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    box-shadow: 0 6px 18px rgba(108, 92, 231, 0.25);
+}
+
+/* =========================================
+   5. Ads Section (Super Awesome Add)
+   ========================================= */
+.ads-section {
+    position: relative;
+    padding: 100px 8%;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    overflow: hidden;
+}
+
+.ads-bg-shape {
+    position: absolute;
+    top: 20%;
+    left: -100px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(108, 92, 231, 0.08) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.ad-row {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.ad-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.ad-image-box {
+    position: relative;
+    flex: 1;
+}
+
+.ad-image-box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.location-badge {
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.3);
+}
+
+.ad-text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad-text-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.ad-text-box p {
+    color: var(--text-gray);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn-more {
+    position: relative;
+    top: 0;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    top: -3px;
+    background-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.3);
+}
+
+/* =========================================
+   6. Footer Section
+   ========================================= */
+.footer-section {
+    position: relative;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 80px 8% 40px;
+}
+
+.footer-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at bottom right, rgba(108, 92, 231, 0.15), transparent 50%);
+    z-index: 1;
+}
+
+.footer-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-brand .brand-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.footer-brand h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.newsletter-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 6px 6px 6px 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.newsletter-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-size: 14px;
+    width: 100%;
+}
+
+.newsletter-box input::placeholder {
+    color: var(--text-muted);
+}
+
+.btn-arrow {
+    position: relative;
+    right: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-arrow:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.footer-divider {
+    position: relative;
+    z-index: 2;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.copyright-col {
+    flex: 1;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.copyright-col p {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.links-grid {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-col h5 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.link-col a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.link-col a:hover {
+    color: var(--primary-color);
+}
+
+/* =========================================
+   7. Responsive Queries (Mobile / Tablet)
+   ========================================= */
+@media (max-width: 992px) {
+    .apt-card {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-section,
+    .stats-section,
+    .ad-row,
+    .ad-row.reverse,
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .stat-card {
+        flex: 1 1 100%;
+    }
+
+    .links-grid {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .newsletter-box {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .apt-card {
+        flex: 1 1 100%;
+    }
+    
+    .apt-bottom-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+}
