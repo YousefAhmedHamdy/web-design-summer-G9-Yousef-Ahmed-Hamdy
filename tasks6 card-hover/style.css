@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f9fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.section-divider {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background: #e1e8ed;
+}
+
+/* =========================================
+   المجموعة الأولى: بطاقات الخيارات (Color Hover)
+   ========================================= */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 6px;
+  padding: 30px 20px 25px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* التنسيق والألوان للبطاقات (1 و 2 و 3) */
+.card-type-1 {
+  background-color: #ebf5f3;
+}
+
+.card-type-1 h3 {
+  color: #1c2b36;
+}
+
+.card-type-1 p {
+  color: #62727d;
+}
+
+.card-type-1 .card-icon-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2da192;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  transition: all 0.3s ease;
+}
+
+.card-type-1:hover {
+  background-color: #2da192;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(45, 161, 146, 0.2);
+}
+
+.card-type-1:hover h3,
+.card-type-1:hover p {
+  color: #ffffff;
+}
+
+.card-type-1:hover .card-icon-top {
+  background-color: #228074;
+}
+
+/* التنسيق والألوان للبطاقة 4 */
+.card-type-2 {
+  grid-column: 2;
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+}
+
+.card-type-2 h3 {
+  color: #1c2b36;
+}
+
+.card-type-2 p {
+  color: #62727d;
+}
+
+.card-type-2 .main-icon {
+  font-size: 24px;
+  color: #556068;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.card-type-2:hover {
+  border-color: #831b4d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-type-2:hover .main-icon {
+  color: #831b4d;
+}
+
+/* =========================================
+   المجموعة الثانية: بطاقات الشخصيات (Slide Hover) - المعدلة
+   ========================================= */
+
+.team-container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* الحاوية الرئيسية للبطاقة */
+.profile-card {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  cursor: pointer;
+}
+
+/* مربع الصورة */
+.img-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* الكارت الأبيض الخلفي (طوله أطول من الصورة لظهور النصوص دائماً) */
+.info-box {
+  position: absolute;
+  width: 100%;
+  height: 285px; /* تم تكبير الطول ليظهر الاسم بوضوح بالأسفل */
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.info-box h3 {
+  font-size: 15px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.info-box p {
+  font-size: 12px;
+  color: #777777;
+}
+
+/* حركة الـ Hover الانزلاقية */
+.profile-card:hover .img-box {
+  transform: translate(-15px, -15px);
+}
+
+.profile-card:hover .info-box {
+  transform: translate(15px, 15px);
+}
