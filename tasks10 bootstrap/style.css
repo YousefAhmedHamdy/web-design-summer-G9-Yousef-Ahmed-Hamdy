@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fcfcfc;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+.extra-small {
+    font-size: 0.75rem;
+}
+
+
+.custom-tabs .nav-link {
+    color: #6c757d;
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border: none;
+    border-radius: 0;
+    background: transparent !important;
+}
+
+.custom-tabs .nav-link.active,
+.custom-tabs .nav-link:hover {
+    color: #000 !important;
+    border-bottom: 2px solid #3f51b5;
+    font-weight: 600;
+}
+
+
+.custom-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-hover-img {
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover .card-hover-img {
+    transform: scale(1.04);
+}
+
+.list-thumb-img {
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebar-thumb {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: #3f51b5;
+    color: #fff;
+    border-color: #3f51b5;
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+@media (min-width: 992px) {
+    .border-start-lg {
+        border-start: 1px solid #dee2e6;
+    }
+}

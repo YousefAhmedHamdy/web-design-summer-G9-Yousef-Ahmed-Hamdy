@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD - News & Magazine Portal</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 tracking-wide" href="index.html">WORLD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gadgets.html">Gadgets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lifestyle.html">Lifestyle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link text-white" href="#searchModal" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass fs-5"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container my-5">
+        <div class="row g-4">
+            
+           
+            <main class="col-lg-8">
+                
+               
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-4 flex-wrap gap-2">
+                    <h2 class="h4 fw-bold m-0 me-3">What's Trending</h2>
+                    <ul class="nav nav-pills custom-tabs flex-grow-1" id="trendingTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="vogue-tab" data-bs-toggle="tab" data-bs-target="#vogue-content" type="button" role="tab">Vogue</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="health-tab" data-bs-toggle="tab" data-bs-target="#health-content" type="button" role="tab">Health & Fitness</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#vogue-content" type="button" role="tab">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="style-tab" data-bs-toggle="tab" data-bs-target="#vogue-content" type="button" role="tab">Style hunter</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="travel-tab" data-bs-toggle="tab" data-bs-target="#health-content" type="button" role="tab">Travel</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="gadgets-tab" data-bs-toggle="tab" data-bs-target="#vogue-content" type="button" role="tab">Gadgets</button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">More</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tech.html">Tech</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            
+                <div class="tab-content" id="trendingTabsContent">
+                    
+                
+                    <div class="tab-pane fade show active" id="vogue-content" role="tabpanel">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                        
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm custom-card">
+                                    <div class="position-relative overflow-hidden">
+                                        <span class="badge bg-primary text-uppercase position-absolute top-0 start-0 m-3 z-1">TRAVEL</span>
+                                        <a href="article.html"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top card-hover-img" alt="Travel"></a>
+                                    </div>
+                                    <div class="card-body px-3 pt-3">
+                                        <h5 class="card-title fw-bold"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></h5>
+                                        <p class="card-text text-muted small mt-2">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 px-3 pb-3">
+                                        <small class="text-muted">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm custom-card">
+                                    <div class="position-relative overflow-hidden">
+                                        <span class="badge bg-primary text-uppercase position-absolute top-0 start-0 m-3 z-1">TRAVEL</span>
+                                        <a href="article.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" class="card-img-top card-hover-img" alt="Beach"></a>
+                                    </div>
+                                    <div class="card-body px-3 pt-3">
+                                        <h5 class="card-title fw-bold"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></h5>
+                                        <p class="card-text text-muted small mt-2">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 px-3 pb-3">
+                                        <small class="text-muted">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm custom-card">
+                                    <div class="position-relative overflow-hidden">
+                                        <span class="badge bg-primary text-uppercase position-absolute top-0 start-0 m-3 z-1">TRAVEL</span>
+                                        <a href="article.html"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top card-hover-img" alt="Travel"></a>
+                                    </div>
+                                    <div class="card-body px-3 pt-3">
+                                        <h5 class="card-title fw-bold"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></h5>
+                                        <p class="card-text text-muted small mt-2">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 px-3 pb-3">
+                                        <small class="text-muted">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm custom-card">
+                                    <div class="position-relative overflow-hidden">
+                                        <span class="badge bg-primary text-uppercase position-absolute top-0 start-0 m-3 z-1">TRAVEL</span>
+                                        <a href="article.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" class="card-img-top card-hover-img" alt="Beach"></a>
+                                    </div>
+                                    <div class="card-body px-3 pt-3">
+                                        <h5 class="card-title fw-bold"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></h5>
+                                        <p class="card-text text-muted small mt-2">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 px-3 pb-3">
+                                        <small class="text-muted">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="tab-pane fade" id="health-content" role="tabpanel">
+                        <div class="row g-4">
+                            
+                          
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column gap-3">
+                                    
+                                
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Model"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Flowers"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Model"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Flowers"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column gap-3">
+                                    
+                            
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Smoothie"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Pink Portrait"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Smoothie"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            
+                                    <div class="card border-0 shadow-sm custom-card">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4">
+                                                <a href="article.html"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80" class="img-fluid rounded-start list-thumb-img" alt="Pink Portrait"></a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body p-2">
+                                                    <h6 class="card-title fw-bold mb-1 fs-6"><a href="article.html" class="text-decoration-none text-dark">How Did van Gogh's Turbulent Mind Depict One of the Most</a></h6>
+                                                    <small class="text-muted extra-small">Katy Liu on Sep 29, 2017 at 9:48 am</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            
+            <aside class="col-lg-4 ps-lg-4 border-start-lg">
+                
+                <div class="mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=120&q=80" class="rounded me-3 sidebar-thumb" alt="Thumb">
+                        <div>
+                            <a href="article.html" class="text-dark text-decoration-none fw-bold small">How Did van Gogh's Turbulent Mind Depict One of the Most...</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=120&q=80" class="rounded me-3 sidebar-thumb" alt="Thumb">
+                        <div>
+                            <a href="article.html" class="text-dark text-decoration-none fw-bold small">How Did van Gogh's Turbulent Mind Depict One of the Most...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+              
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-3">Stay Connected</h5>
+                    <div class="d-flex justify-content-between text-center">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div>
+                    <h5 class="fw-bold mb-3">Today's Pick</h5>
+                    <div class="card border-0">
+                        <a href="article.html">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" class="card-img-top rounded" alt="Space">
+                        </a>
+                        <div class="card-body px-0 pt-3">
+                            <h6 class="fw-bold">
+                                <a href="article.html" class="text-dark text-decoration-none">How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    
+    <a href="#" class="btn btn-dark rounded-circle back-to-top shadow">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html
