@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dynamic Card</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+    <div class="card-container">
+        
+       
+        <div class="image-section">
+            <img src="images/1.jpg" id="card-img" alt="Showcase Image" class="main-img border-gold" onclick="handleClick(this)">
+            <button class="btn-change" onclick="changeImg()">Change Image</button>
+        </div>
+
+       
+        <div class="content-section">
+            <h3 class="category-title text-dark">Web Design</h3>
+            <h1 id="h1_element" class="main-title border">Creative Solutions</h1>
+            <p class="description-text text-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, laboriosam!
+            </p>
+            <a href="#" class="link-text">Read more &rarr;</a>
+        </div>
+
+        <hr class="divider">
+
+    
+        <div class="footer-section">
+           
+            <form id="userForm">
+                <input type="text" placeholder="Enter your name..." id="userName" class="input-field" required>
+                <input type="email" placeholder="Enter your email..." id="userEmail" class="input-field" required>
+                <button type="submit" class="btn-submit">Add User Card</button>
+            </form>
+            
+        
+            <h2 id="live-welcome"></h2>
+
+        
+            <ul class="card-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="cards-container" class="users-wrapper"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

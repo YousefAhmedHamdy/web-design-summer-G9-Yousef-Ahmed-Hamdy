@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+
+.card-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    background-color: teal;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin: 0 auto 30px auto;
+}
+
+
+
+.border {
+    border: 3px solid goldenrod;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.border-gold {
+    border: 3px solid goldenrod;
+    border-radius: 8px;
+}
+
+
+.image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.main-img:hover {
+    transform: scale(1.02);
+}
+
+.btn-change, .btn-submit {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-change:hover, .btn-submit:hover {
+    background-color: #daa520;
+}
+
+
+.category-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.description-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.link-text {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+/* المدخلات */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.input-field::placeholder {
+    color: #b2dfdb;
+}
+
+#live-welcome {
+    font-size: 1.1rem;
+    color: goldenrod;
+    text-align: center;
+    margin-top: 10px;
+    min-height: 24px;
+}
+
+.card-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.card-nav a {
+    color: #b2dfdb;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+
+.users-wrapper {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.alert-primary {
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196f3;
+    padding: 15px;
+    border-radius: 8px;
+    color: #0d47a1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.alert-primary h4 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
