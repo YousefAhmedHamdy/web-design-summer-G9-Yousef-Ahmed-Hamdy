@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krist - My Profile</title>
-    <!-- Bootstrap CSS -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome Icons -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -18,7 +18,7 @@
             background-color: #fff;
         }
 
-        /* Header & Navigation */
+       
         .navbar-brand {
             font-weight: 800;
             font-size: 26px;
@@ -115,7 +115,7 @@
             font-weight: 500;
         }
 
-        /* Notification Icons */
+       
         .notification-icon {
             width: 42px;
             height: 42px;
@@ -129,7 +129,7 @@
             flex-shrink: 0;
         }
 
-        /* Modal Styling */
+        
         .modal-content {
             border-radius: 8px;
             border: none;
@@ -172,7 +172,7 @@
             width: 100%;
         }
 
-        /* Tab Content Control */
+       
         .tab-section {
             display: none;
         }
@@ -181,7 +181,7 @@
             display: block;
         }
 
-        /* Footer Styling */
+       
         footer {
             background-color: #111;
             color: #fff;
@@ -204,7 +204,7 @@
     <nav class="navbar navbar-expand-lg py-3 border-bottom">
         <div class="container">
    <a class="navbar-brand d-flex align-items-center gap-1" href="#">
-    <!-- شعار حرف K بالأشكال الهندسية SVG -->
+    
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 3H8V21H4V3Z" />
         <path d="M10 12L17.5 3H22.5L14 13L22.5 21H17.5L10 12Z" />
@@ -231,8 +231,9 @@
             </div>
         </div>
     </nav>
+    
 
-    <!-- Main Container -->
+  
     <div class="container my-5">
         <h3 class="fw-bold mb-4">My Profile</h3>
 
@@ -262,7 +263,7 @@
             <!-- Content Area -->
             <div class="col-md-9 ps-md-4">
                 
-                <!-- SECTION: MANAGE ADDRESSES -->
+                
                 <div id="tab-addresses" class="tab-section active">
                     <div class="mb-4">
                         <button class="btn btn-black py-2 px-4" data-bs-toggle="modal" data-bs-target="#addAddressModal">
@@ -285,7 +286,7 @@
                     </div>
                 </div>
 
-                <!-- SECTION: SAVED CARDS -->
+               
                 <div id="tab-cards" class="tab-section">
                     <div class="mb-4">
                         <button class="btn btn-black py-2 px-4" data-bs-toggle="modal" data-bs-target="#addCardModal">
@@ -307,7 +308,7 @@
                     </div>
                 </div>
 
-                <!-- SECTION: NOTIFICATIONS -->
+    
                 <div id="tab-notifications" class="tab-section">
                     <div class="notifications-list">
                         <div class="notification-box d-flex justify-content-between align-items-center">
@@ -339,7 +340,7 @@
                     </div>
                 </div>
 
-                <!-- OTHER TABS PLACEHOLDERS -->
+                
                 <div id="tab-personal" class="tab-section">
                     <h5>Personal Information</h5>
                 </div>
@@ -354,7 +355,7 @@
         </div>
     </div>
 
-    <!-- Modal: Add Address -->
+    <!-- Add Address -->
     <div class="modal fade" id="addAddressModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -397,7 +398,7 @@
                 });
             });
 
-            // Dynamic Delete Logic
+            
             document.addEventListener('click', function (e) {
                 if (e.target.closest('.btn-action-delete')) {
                     if (confirm('Are you sure you want to delete this item?')) {
@@ -410,5 +411,87 @@
             });
         });
     </script>
+    <!-- Footer Section -->
+<footer class="custom-footer">
+    <div class="container">
+        <!-- Top Row: Columns -->
+        <div class="row g-4 footer-top-row">
+            <!-- Brand Column -->
+            <div class="col-md-3">
+                <div class="footer-brand mb-3">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 3H8V21H4V3Z" />
+                        <path d="M10 12L17.5 3H22.5L14 13L22.5 21H17.5L10 12Z" />
+                    </svg>
+                    <span>Krist</span>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-phone"></i> (704) 555-0127</p>
+                    <p><i class="fa-regular fa-envelope"></i> krist@example.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 3891 Ranchview Dr. Richardson, California 62639</p>
+                </div>
+            </div>
+
+            <!-- Information Column -->
+            <div class="col-md-3 ps-md-5">
+                <h5>Information</h5>
+                <ul class="footer-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </ul>
+            </div>
+
+            <!-- Service Column -->
+            <div class="col-md-3">
+                <h5>Service</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe Column -->
+            <div class="col-md-3">
+                <h5>Subscribe</h5>
+                <p class="subscribe-text">Enter your email below to be the first to know about new collections and product launches.</p>
+                <div class="figma-subscribe-box">
+                    <i class="fa-regular fa-envelope mail-icon"></i>
+                    <input type="email" placeholder="Your Email">
+                    <button type="button" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Bottom Row: Payments, Copyright, Socials -->
+        <div class="footer-bottom-row d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- Payment Icons -->
+            <div class="payment-icons d-flex align-items-center gap-2">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-cc-amazon-pay"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+            
+            <!-- Copyright -->
+            <p class="copyright-text">©2023 Krist All Rights are reserved</p>
+            
+            <!-- Social Icons -->
+            <div class="social-icons d-flex gap-3">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

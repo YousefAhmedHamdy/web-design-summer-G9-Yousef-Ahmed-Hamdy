@@ -121,7 +121,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Modal Styling */
+
 .modal-content {
     border-radius: 8px;
     border: none;
@@ -165,7 +165,7 @@ body {
     width: 100%;
 }
 
-/* Tab Content Control */
+
 .tab-section {
     display: none;
 }
